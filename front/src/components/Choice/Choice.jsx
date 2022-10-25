@@ -6,21 +6,21 @@ import parents from '../../img/parents.png';
 
 function Choice() {
   const navigate = useNavigate();
-  const goParents = () => {
-    navigate('/');
-  };
   const goChild = () => {
-    navigate('/');
+    navigate('/child');
+  };
+  const goParents = () => {
+    navigate('/parents');
   };
 
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>대상을 선택해주세요</h1>
       <div className={styles.boxContainer}>
-        <button type='button' className={styles.box1} onClick={goParents}>
+        <button type='button' className={styles.box1} onClick={goChild}>
           <img src={child} className={styles.image} alt='' />
         </button>
-        <button type='button' className={styles.box2} onClick={goChild}>
+        <button type='button' className={styles.box2} onClick={goParents}>
           <img src={parents} className={styles.image} alt='' />
         </button>
       </div>
