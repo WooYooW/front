@@ -1,0 +1,10 @@
+/* Main color */
+@value backGround: #FBF6E8;
+@value keyColor: #7887F0;
+@value boxColor: #f4eedf;
+@value hoverKeyColor: #5D66E3;
+
+/* 무채색 */
+@value colorWhite: white;
+@value colorLightGray: #CBCDD3;
+@value colorGray: #A5A9B4;

@@ -1,0 +1,53 @@
+@value keyColor, boxColor from '../../common/color.css';
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.title {
+  margin-bottom: 4rem;
+}
+
+.box1,
+.box2 {
+  width: 20rem;
+  height: 20rem;
+  background-color: boxColor;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+
+.box1 {
+  margin-right: 2rem;
+}
+
+.box2 {
+  margin-left: 2rem;
+}
+
+.box1:hover,
+.box2:hover {
+  outline: 2px solid keyColor;
+  outline-offset: -3px;
+  transition: all 100ms ease-in-out;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.introContainer {
+  margin-top: 2rem;
+}
+
+.intro {
+  margin-left: 11rem;
+  margin-right: 11rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}

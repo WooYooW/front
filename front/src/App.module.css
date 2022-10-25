@@ -1,0 +1,6 @@
+@value backGround from "./common/color.css";
+
+.bg {
+  background-color: backGround;
+  height: 100vh;
+}

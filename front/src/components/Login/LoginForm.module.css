@@ -1,0 +1,88 @@
+@value colorWhite, keyColor, hoverKeyColor, colorLightGray, colorGray from '../../common/color.css';
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50rem;
+  height: 30rem;
+  transform: translate(-50%, -50%);
+  background-color: colorWhite;
+  border-radius: 18px;
+  border: 1.5px solid keyColor;
+}
+
+.title {
+  margin-left: 3rem;
+  font-weight: 800;
+  color: keyColor;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: 2rem;
+  margin-left: 45rem;
+}
+
+.closeIcon {
+  color: keyColor;
+  font-size: 2rem;
+}
+
+/* input form */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.inputBox {
+  width: 30rem;
+  height: 2.5em;
+  margin-bottom: 1.5rem;
+  border: 1.5px solid keyColor;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  text-indent: 0.8rem;
+}
+
+/* button */
+.btnContainer {
+  margin-top: 1.5rem;
+}
+
+.joinBtn {
+  cursor: pointer;
+  width: 10em;
+  height: 2.5em;
+  margin-right: 2.5rem;
+  background-color: colorLightGray;
+  color: colorWhite;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.joinBtn:hover {
+  background-color: colorGray;
+  transition: all 200ms ease-in;
+}
+
+.startBtn {
+  cursor: pointer;
+  width: 10em;
+  height: 2.5em;
+  background-color: keyColor;
+  color: colorWhite;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.startBtn:hover {
+  background-color: hoverKeyColor;
+  transition: all 200ms ease-in;
+}
