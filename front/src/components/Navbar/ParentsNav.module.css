@@ -1,0 +1,52 @@
+@value keyColor, colorWhite from '../../common/color.css';
+
+.nav {
+  z-index: 999;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  width: 250px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 44px;
+  margin-left: 4rem;
+  color: keyColor;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 10rem;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  margin-left: 7.5rem;
+  color: keyColor;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.logoutBtn {
+  width: 6rem;
+  height: 2.7rem;
+  margin-top: 0.5rem;
+  margin-left: 7rem;
+  border-radius: 10px;
+  background-color: keyColor;
+  color: colorWhite;
+  font-size: 1.3rem;
+}
