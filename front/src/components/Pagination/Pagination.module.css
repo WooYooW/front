@@ -1,0 +1,33 @@
+@value hoverKeyColor, keyColor, colorWhite from '../../common/color.css';
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: -2rem;
+}
+
+.paginationBtns {
+  width: 80%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.paginationBtns a {
+  width: 40px;
+  height: 40px;
+  flex-grow: 0;
+  margin: 0 8px 0 0;
+  padding: 8px 15px;
+  border: solid 1px hoverKeyColor;
+  color: hoverKeyColor;
+}
+
+.paginationBtns a:hover,
+.paginationActive a {
+  background-color: hoverKeyColor;
+  color: white;
+}

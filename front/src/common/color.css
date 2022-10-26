@@ -6,5 +6,6 @@
 
 /* 무채색 */
 @value colorWhite: white;
+@value darkWhite: #FEFEFE;
 @value colorLightGray: #CBCDD3;
 @value colorGray: #A5A9B4;
