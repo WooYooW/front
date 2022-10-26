@@ -1,0 +1,29 @@
+@value darkWhite, colorGray, keyColor, backGround from '../../common/color.css';
+
+.container {
+  background-color: backGround;
+  padding-top: 100px;
+  padding-bottom: 5rem;
+}
+
+.newContainer {
+  width: 70%;
+  height: 100%;
+  min-height: 38rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 6rem;
+  background-color: darkWhite;
+  border: 2px solid keyColor;
+  border-radius: 10px;
+}
+
+.info {
+  margin-top: 1rem;
+  color: colorGray;
+}
+
+.content {
+  margin-top: 3.5rem;
+  font-size: 1.3rem;
+}

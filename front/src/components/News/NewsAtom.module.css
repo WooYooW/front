@@ -1,0 +1,47 @@
+@value hoverKeyColor, keyColor, colorWhite from '../../common/color.css';
+
+.card {
+  width: 24rem;
+  height: 16rem;
+  border: 2px solid keyColor;
+  border-radius: 30px;
+}
+
+.title {
+  width: 16rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content {
+  margin-left: 2rem;
+  width: 19.5rem;
+  margin-top: 1rem;
+  max-height: 6.2rem;
+  overflow: hidden;
+  vertical-align: top;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  float: right;
+  background-color: keyColor;
+  border-radius: 50%;
+}
+
+.btn:hover {
+  transition: all 200ms ease-in;
+  background-color: hoverKeyColor;
+}
+
+.icon {
+  color: colorWhite;
+}

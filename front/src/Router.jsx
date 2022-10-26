@@ -12,6 +12,7 @@ import Article from './components/Article/Article';
 import News from './components/News/News';
 import Video from './components/Video/Video';
 import LearningRecord from './components/LearningRecord/LearningRecord';
+import NewsDetail from './components/News/NewsDetail';
 
 function Router() {
   return (
@@ -26,6 +27,7 @@ function Router() {
       <Route path='game' element={<Game />} />
       <Route path='article' element={<Article />} />
       <Route path='news' element={<News />} />
+      <Route path='news/:newsId' element={<NewsDetail />} />
       <Route path='video' element={<Video />} />
       <Route path='learningrecord' element={<LearningRecord />} />
     </Routes>
