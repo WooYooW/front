@@ -12,5 +12,16 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react'],
-  rules: { 'import/prefer-default-export': 'off', 'react/prop-types': 'off' },
+  rules: {
+    'import/prefer-default-export': 'off',
+    'react/prop-types': 'off',
+    'jsx-a11y/media-has-caption': [
+      2,
+      {
+        audio: ['Audio'],
+        video: ['Video'],
+        track: ['Track'],
+      },
+    ],
+  },
 };
