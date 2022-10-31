@@ -1,4 +1,4 @@
-@value keyColor, colorWhite from '../../common/color.css';
+@value keyColor, colorWhite, hoverKeyColor from '../../common/color.css';
 
 .nav {
   z-index: 999;
@@ -13,12 +13,12 @@
 .logo {
   width: 250px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 1.5rem;
   line-height: 44px;
   margin-left: 4rem;
   margin-right: 8rem;
-  color: keyColor;
+  color: hoverKeyColor;
 }
 
 .menuContainer {
