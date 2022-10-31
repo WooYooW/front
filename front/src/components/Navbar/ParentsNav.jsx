@@ -16,9 +16,6 @@ function ParentsNav() {
           <Link to='/news'>
             <li className={styles.menu}>뉴스</li>
           </Link>
-          <Link to='/video'>
-            <li className={styles.menu}>영상</li>
-          </Link>
           <Link to='/learningrecord'>
             <li className={styles.menu}>학습 기록</li>
           </Link>
