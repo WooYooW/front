@@ -2,10 +2,10 @@
 import * as faceapi from 'face-api.js';
 import React from 'react';
 
-function FaceCam() {
+function FaceCam(props) {
   const [modelsLoaded, setModelsLoaded] = React.useState(false);
   const [captureVideo, setCaptureVideo] = React.useState(false);
-  const [data, setData] = React.useState("감정을 알아봐요")
+  const [data, setData] = React.useState('감정을 알아봐요');
 
   const videoRef = React.useRef();
   const videoHeight = 480;
@@ -66,10 +66,14 @@ function FaceCam() {
           displaySize
         );
 
-        let max = Object.keys(resizedDetections[0].expressions).reduce((a, b) => resizedDetections[0].expressions[a] > resizedDetections[0].expressions[b] ? a :b) 
-        console.log(max)
+        let max = Object.keys(resizedDetections[0].expressions).reduce((a, b) =>
+          resizedDetections[0].expressions[a] >
+          resizedDetections[0].expressions[b]
+            ? a
+            : b
+        );
 
-        setData(max)
+        setData(max);
 
         canvasRef &&
           canvasRef.current &&
@@ -98,6 +102,23 @@ function FaceCam() {
     setCaptureVideo(false);
   };
 
+  if (data == 'happy') {
+    setData('행복해요');
+  }
+  //  else if (data == 'angry') {
+  //   setData('화가 났어요');
+  // } else if (data == 'surprised') {
+  //   setData('놀랐어요');
+  // } else if (data == 'fearful') {
+  //   setData('두려워요');
+  // } else if (data == 'sad') {
+  //   setData('슬퍼요');
+  // } else if (data == 'disgusted') {
+  //   setData('역겨워요');
+  // } else {
+  //   setData('표정을 지어보세요');
+  // }
+
   return (
     <div>
       <span>{data}</span>
@@ -107,7 +128,7 @@ function FaceCam() {
             onClick={closeWebcam}
             style={{
               cursor: 'pointer',
-              backgroundColor: 'green',
+              backgroundColor: '#7887F0',
               color: 'white',
               padding: '15px',
               fontSize: '25px',
@@ -115,14 +136,14 @@ function FaceCam() {
               borderRadius: '10px',
             }}
           >
-            Close Webcam
+            닫아볼까요?
           </button>
         ) : (
           <button
             onClick={startVideo}
             style={{
               cursor: 'pointer',
-              backgroundColor: 'green',
+              backgroundColor: '#7887F0',
               color: 'white',
               padding: '15px',
               fontSize: '25px',
@@ -130,7 +151,7 @@ function FaceCam() {
               borderRadius: '10px',
             }}
           >
-            Open Webcam
+            눌러볼까요?
           </button>
         )}
       </div>
