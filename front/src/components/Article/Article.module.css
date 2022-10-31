@@ -1,3 +1,54 @@
+@value keyColor from '../../common/color.css';
+
 .container {
-  padding-top: 100px;
+  padding-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Table */
+.member {
+  width: 900px;
+  background-color: #fff;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.member caption {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.member tr {
+  border-bottom: 1px solid #eee;
+}
+
+.member tr:last-child {
+  border: none;
+}
+
+.member td:first-child {
+  width: 4rem;
+}
+
+.member th,
+.member td {
+  padding: 13px;
+  text-align: center;
+}
+
+.member tr th {
+  background-color: keyColor;
+  color: #fff;
+}
+
+.member tr th:first-child {
+  border-radius: 5px 0 0 0;
+}
+
+.member tr th:last-child {
+  border-radius: 0 5px 0 0;
 }

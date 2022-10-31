@@ -6,7 +6,7 @@ function ChildNav() {
   return (
     <nav className={styles.nav}>
       <Link to='/child'>
-        <h1 className={styles.logo}>서비스 이름</h1>
+        <h1 className={styles.logo}>도담도담</h1>
       </Link>
       <div className={styles.menuContainer}>
         <ul className={styles.menus}>
